@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/process"
+    app:barrierAllowsGoneWidgets="false"
+    tools:context=".process">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="108dp"
+        android:text="Your name"
+        android:textColor="@color/background_material_ligh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="eg: thiyaga"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@color/accent_material_dark_1"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="242dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="29dp"
+        android:text=" Your patner name"
+        android:textAlignment="inherit"
+        android:textColor="@color/background_material_ligh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="308dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="29dp"
+        android:ems="10"
+        android:hint="eg: cherry"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@color/accent_material_dark_1"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <Button
+        android:id="@+id/flames"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/button"
+        android:text="flames"
+        android:textColor="@color/accent_material_dark_1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="36dp" />
+
+</android.support.constraint.ConstraintLayout>
