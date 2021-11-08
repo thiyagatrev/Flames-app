@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,6 +15,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="108dp"
+        android:fontFamily="@font/twinpine"
         android:text="Your name"
         android:textColor="@color/background_material_ligh"
         android:textSize="20sp"
@@ -34,6 +34,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="7dp"
         android:ems="10"
+        android:fontFamily="@font/blunt"
         android:hint="eg: thiyaga"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
@@ -53,6 +54,7 @@
         android:layout_width="242dp"
         android:layout_height="31dp"
         android:layout_marginStart="29dp"
+        android:fontFamily="@font/twinpine"
         android:text=" Your patner name"
         android:textAlignment="inherit"
         android:textColor="@color/background_material_ligh"
@@ -70,6 +72,7 @@
         android:layout_height="44dp"
         android:layout_marginStart="29dp"
         android:ems="10"
+        android:fontFamily="@font/blunt"
         android:hint="eg: cherry"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
@@ -83,23 +86,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.558" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/flames"
+        style="@style/MyButton"
         android:layout_width="190dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="69dp"
         android:layout_marginEnd="125dp"
         android:layout_marginBottom="124dp"
-        android:background="@drawable/button_outline"
-        android:text="flames"
+        android:fontFamily="@font/twinpine"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/flames"
         android:textColor="@color/accent_material_dark_1"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:strokeWidth="2dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

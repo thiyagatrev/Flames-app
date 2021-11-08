@@ -10,4 +10,8 @@
     <string name="title_activity_affection">affection</string>
     <string name="title_activity_enemies">enemies</string>
     <string name="title_activity_siblings">siblings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yes">yes..!</string>
+    <string name="flames">flames</string>
 </resources>

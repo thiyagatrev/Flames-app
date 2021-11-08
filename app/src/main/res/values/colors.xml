@@ -9,5 +9,6 @@
     <color name="background_material_light">#85eec3</color>
     <color name="background_material_ligh">#80f9ab</color>
     <color name="buttonPressed">#ff1a40</color>
+    <color name="button_outline_color">#ADADAD</color>
 
 </resources>

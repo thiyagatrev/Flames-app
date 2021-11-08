@@ -20,6 +20,7 @@
         android:textColor="?attr/actionMenuTextColor"
         android:textSize="70dp"
         android:textStyle="normal"
+        android:fontFamily="@font/twinpine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"

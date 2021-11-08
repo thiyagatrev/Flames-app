@@ -18,6 +18,7 @@
         android:text="Friends"
         android:textAlignment="center"
         android:textSize="70sp"
+        android:fontFamily="@font/twinpine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
