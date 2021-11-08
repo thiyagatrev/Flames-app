@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Flames</string>
+    <string name="title_activity_process">process</string>
+    <string name="title_activity_result">result</string>
+    <string name="title_activity_splash">splash</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_friends">friends</string>
+    <string name="title_activity_lovers">lovers</string>
+    <string name="title_activity_marriage">marriage</string>
+    <string name="title_activity_affection">affection</string>
+    <string name="title_activity_enemies">enemies</string>
+    <string name="title_activity_siblings">siblings</string>
+</resources>
