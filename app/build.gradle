@@ -4,6 +4,9 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
+    id 'com.google.gms.google-services'
 
 }
 apply from: "${project.rootDir}/dependencies.gradle"
@@ -40,6 +43,8 @@ dependencies {
     encryptedPrefs()
     Glide()
     FacebookDebugger()
+    FirebaseCrashlytics()
+    FirebasePerformance()
     Lifecycle()
     NavGraph()
     ReactiveX()

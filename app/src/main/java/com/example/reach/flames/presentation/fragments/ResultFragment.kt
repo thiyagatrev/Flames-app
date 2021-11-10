@@ -12,6 +12,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.reach.flames.R
 import com.example.reach.flames.databinding.FragmentResultBinding
 import com.example.reach.flames.domain.FlamesViewModel
+import com.example.reach.flames.utils.show
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
