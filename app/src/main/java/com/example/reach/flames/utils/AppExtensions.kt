@@ -1,5 +1,7 @@
 package com.example.reach.flames.utils
 
+import android.content.Context
+import android.net.ConnectivityManager
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.IdRes
@@ -73,4 +75,11 @@ class DebounceOnClickListener(
             listenerBlock(v)
         }
     }
+}
+
+fun Context.hasInternetConnection(): Boolean {
+    val connectManager = this.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager
+    val manager = connectManager?.let { it } ?: return false
+    val activeNetwork = manager.activeNetworkInfo
+    return activeNetwork != null && activeNetwork.isConnectedOrConnecting
 }

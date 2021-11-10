@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.reach.flames">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/hey"
@@ -9,6 +11,10 @@
         android:roundIcon="@mipmap/hey"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"

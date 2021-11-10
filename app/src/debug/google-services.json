@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "828846346685",
+    "project_id": "flames-app-4f97c",
+    "storage_bucket": "flames-app-4f97c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828846346685:android:b91532f035d3857b1e02d4",
+        "android_client_info": {
+          "package_name": "com.example.reach.flames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828846346685-52077dh8punb5hug9qpj180gas16670a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7lWHewYsKFxaZ8nNALg1sIjj6L3GJKsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828846346685-52077dh8punb5hug9qpj180gas16670a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

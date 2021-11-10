@@ -60,6 +60,10 @@ def FirebaseCrashlytics=dependencyGroup{
 def FirebasePerformance=dependencyGroup{
 
     api 'com.google.firebase:firebase-perf:20.0.3'
+    api 'com.google.firebase:firebase-perf-ktx'
+    api  platform('com.google.firebase:firebase-bom:29.0.0')
+
+
 }
 
 
@@ -148,8 +152,8 @@ def NavGraph=dependencyGroup{
 
 
 def ReactiveX = dependencyGroup {
-    api 'io.reactivex.rxjava2:rxjava:2.1.5'
-    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'io.reactivex.rxjava3:rxjava:3.1.2'
+    api 'io.reactivex.rxjava3:rxandroid:3.0.0'
     api 'com.github.tbruyelle:rxpermissions:0.12'
 }
 

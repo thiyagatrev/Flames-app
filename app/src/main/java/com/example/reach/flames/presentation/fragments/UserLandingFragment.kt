@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.reach.flames.databinding.FragmentUserLandingBinding
 import com.example.reach.flames.domain.FlamesFlowState
 import com.example.reach.flames.domain.FlamesViewModel
+import com.example.reach.flames.utils.hasInternetConnection
 import com.example.reach.flames.utils.safeNavigate
 import com.example.reach.flames.utils.setOnClickListener
 import kotlinx.coroutines.Job
@@ -82,10 +83,20 @@ class UserLandingFragment : Fragment() {
 
     private fun initClickListeners() {
         binding.flames.setOnClickListener(debounceInterval = 1000) {
-            flamesViewModel.initFlames(
-                binding.editText.text.toString(),
-                binding.editText2.text.toString()
-            )
+            if (requireContext().hasInternetConnection()) {
+                flamesViewModel.initFlames(
+                    binding.editText.text.toString(),
+                    binding.editText2.text.toString()
+                )
+            } else {
+                Toast.makeText(
+                    requireContext(),
+                    "Please turn on internet to proceed..!",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+
         }
     }
 
